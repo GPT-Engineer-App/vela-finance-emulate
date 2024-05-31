@@ -1,4 +1,4 @@
-import { Container, Box, Text, VStack, HStack, Link, Spacer, Image, IconButton } from "@chakra-ui/react";
+import { Container, Box, Text, VStack, HStack, Link, Spacer, Image, IconButton, Button } from "@chakra-ui/react";
 import { FaTwitter, FaTelegram } from "react-icons/fa";
 
 const Index = () => {
@@ -9,15 +9,15 @@ const Index = () => {
           Vela
         </Text>
         <HStack spacing={8}>
-          <Link color="white" href="#about">
+          <Button as="a" colorScheme="whiteAlpha" variant="outline" href="#about">
             About
-          </Link>
-          <Link color="white" href="#blog">
+          </Button>
+          <Button as="a" colorScheme="whiteAlpha" variant="outline" href="#blog">
             Blog
-          </Link>
-          <Link color="white" href="#our-companies">
+          </Button>
+          <Button as="a" colorScheme="whiteAlpha" variant="outline" href="#our-companies">
             Our Companies
-          </Link>
+          </Button>
         </HStack>
       </HStack>
       <Container centerContent maxW="container.md" bg="white" borderRadius="md" boxShadow="lg" p={8} mt={8} mb={8}>
